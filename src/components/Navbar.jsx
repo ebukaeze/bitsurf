@@ -2,18 +2,20 @@ import React from 'react';
 import logo from '../assets/images/logo1.png';
 
 import { Link } from 'react-router-dom';
-import {Button, Menu, Typography, Avatar } from 'antd';
+import {Button, Menu, Typography, Avatar, Layout } from 'antd';
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined} from '@ant-design/icons'
 
-
 function Navbar() {
+    
     return (
-        <nav className="nav">
+        
+        <div className="nav">
             <div className="navbar-container">
                 <div className="logo-container">
                     <Link to="/">
-                    <Avatar src={logo} size="large"/></Link>
-                    
+                    <div ><img src={logo} alt="logo" className="logo"/></div>
+                    </Link>
+                    {/* <Button className="menu-control-container"></Button> */}
                 </div>
                 <Menu theme="dark">
                     <Menu.Item icon={<HomeOutlined />}>
@@ -31,8 +33,9 @@ function Navbar() {
 
                 </Menu>
             </div>
-            
-        </nav>
+           
+        </div>
+      
     )
 }
 
