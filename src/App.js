@@ -12,6 +12,7 @@ function App() {
   const [ collapsed, setCollapse ] = useState(false);
 
     const onCollapse = () => setCollapse(!collapsed);
+    
   return (
      <div className="App">
     <Layout style={{minHeight: "100vh", width: "100%"}}>
@@ -25,7 +26,7 @@ function App() {
      <div className="main">
        <Layout className="site-layout">
          {/* <Header className="site-layout-background" style={{padding: 0, width: "100%", background:"#fff"}}/> */}
-         <Content className="site-layout-background" style={{width: "100%", margin: "24px 16px", padding: 24, background: "#fff"}} >
+         <Content className="site-layout-background" style={{width: "100%", margin: "0", padding: 24, background: "#fff"}} >
          <div className="routes">
            <Switch>
              <Route exact path="/">
