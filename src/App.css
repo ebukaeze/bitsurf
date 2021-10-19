@@ -5,11 +5,14 @@
   object-position: center center;
 }
 .site-layout {
-  width: 990px;
-  display: flex;
+  align-items: center;
+}
+.routes {
+  width: 1028px;
+  max-width: 100vw;
 }
 .site-layout .site-layout-background {
-  background-color: transparent;
+  background-color: #fff;
 }
 .grid-card {
   box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.4);
@@ -20,6 +23,68 @@
   justify-content: center;
   flex-direction: row;
 }
+.grid-card:nth-child(4) {
+  background-image: linear-gradient(
+    90deg,
+    #e3d2ff 0%,
+    #ffe6f9 35%,
+    #d0a0df 100%
+  );
+  color: #fff;
+}
 .col-icon {
   font-size: 38px;
+}
+.home-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #dbdbdb;
+}
+
+.crypto-image {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+.search-cryptos {
+  max-width: 250px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .routes {
+    width: 90%;
+    max-width: 100vw;
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 15px;
+    width: 80vw;
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .site-layout {
+    width: 100vw;
+    align-items: center;
+    display: flex;
+  }
+  .routes {
+    width: 60%;
+    max-width: 430px;
+  }
+  .home-heading-container {
+    width: 100%;
+    max-width: 450px;
+    font-size: 20px;
+  }
+  .home-title {
+    width: 60%;
+    font-size: 28px;
+  }
 }
