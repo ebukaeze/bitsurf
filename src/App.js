@@ -46,23 +46,21 @@ function App() {
            </Switch>
          </div>
   
-         <Footer style={{textAlign: 'center'}}>
-             <div className="footer">
-       
-         <Typography.Title level={3} style={{color: "white", textAlign: "center"}}>
-           Bitsurf<br/>
-           All rights reserved
-         </Typography.Title>
-         <Space>
-           <Link to="/">Home</Link>
-           <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-           <Link to="/exchanges">Exchanges</Link>
-           <Link to="/news">News</Link>
-
-       </Space>
-     </div>
-         </Footer>
-      </Layout>
+          </Layout>
+           <div className="footer">
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+          <Link to="/">
+            Bitsurf Inc.
+          </Link> <br />
+          All Rights Reserved.
+        </Typography.Title>
+        <Space>
+          <Link to="/">Home</Link>
+          <Link to="/exchanges">Exchanges</Link>
+          <Link to="/news">News</Link>
+        </Space>
+      </div>
+     
       
 
      </div>

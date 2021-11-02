@@ -27,11 +27,11 @@ const HomePage = () => {
        </Title>
     
        <Row className="grid">
-           <Col xs={{ span: 7, offset: 1 }} lg={{ span: 6, offset: 0 }} className="grid-card"><PieChartTwoTone style={{  color: "#db6221",}} className="col-icon"/><Statistic title="Total Cryptocurrencies" value={globalStats.total} valueStyle={{ fontWeight: 600}}/></Col>
-           <Col xs={{ span: 7, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><BarChartOutlined style={{  color: "#14f58f",}} className="col-icon"/><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} valueStyle={{ fontWeight: 600}}/></Col>
-           <Col xs={{ span: 7, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><StockOutlined style={{  color: "#db216b",}} className="col-icon"/><Statistic title="Total Market Cap" value={millify(globalStats.totalMarketCap)} valueStyle={{ fontWeight: 600}}/></Col>
-           <Col xs={{ span: 7, offset: 1 }} lg={{ span: 6, offset: 0 }} className="grid-card"><FundOutlined style={{  color: "#14f58f",}} className="col-icon"/><Statistic title="Total 24h Volume" value={millify(globalStats.total24hVolume)} valueStyle={{ fontWeight: 600}}/></Col>
-           <Col xs={{ span: 7, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><DollarCircleTwoTone style={{  color: "#21bfdb",}} className="col-icon"/><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} valueStyle={{ fontWeight: 600}}/></Col>
+           <Col xs={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 0 }} className="grid-card"><PieChartTwoTone style={{  color: "#db6221",}} className="col-icon"/><Statistic title="Total Cryptos" value={millify(globalStats.total)} valueStyle={{ fontWeight: 600}}/></Col>
+           <Col xs={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><BarChartOutlined style={{  color: "#14f58f",}} className="col-icon"/><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} valueStyle={{ fontWeight: 600}}/></Col>
+           <Col xs={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><StockOutlined style={{  color: "#db216b",}} className="col-icon"/><Statistic title="Total Market Cap" value={millify(globalStats.totalMarketCap)} valueStyle={{ fontWeight: 600}}/></Col>
+           <Col xs={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 0 }} className="grid-card"><FundOutlined style={{  color: "#14f58f",}} className="col-icon"/><Statistic title="Total 24h Volume" value={millify(globalStats.total24hVolume)} valueStyle={{ fontWeight: 600}}/></Col>
+           <Col xs={{ span: 6, offset: 1 }} lg={{ span: 6, offset: 1 }} className="grid-card"><DollarCircleTwoTone style={{  color: "#21bfdb",}} className="col-icon"/><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} valueStyle={{ fontWeight: 600}}/></Col>
        </Row>
       
        {minWidth < 900 ?

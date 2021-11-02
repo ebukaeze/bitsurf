@@ -23,7 +23,7 @@ const News = ({ simplified }) => {
     if(!cryptoNews?.value) return <Loader/>
     return (
         <>
-        <Row gutter={[24, 24]} className="row-grid">
+        <Row gutter={[32, 32]} className="row-grid">
             {!simplified && (
                 <Col span={24}>
                     <Select

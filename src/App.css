@@ -25,7 +25,7 @@
 .main {
   flex: 0.8;
   width: 90%;
-  margin-left: 150px;
+  margin-left: 11%;
 }
 .routes {
   padding: 20px;
@@ -154,10 +154,10 @@
   box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.4);
   padding: 5px;
   margin-bottom: 1.5rem;
-  display: flex;
+  /*  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;  */
   background-image: linear-gradient(
     90deg,
     #fdf4fd 0%,
@@ -165,6 +165,7 @@
     #fdf5ff 100%
   );
 }
+
 .grid-card:nth-child(4) {
   background-image: linear-gradient(
     90deg,
@@ -338,9 +339,17 @@
     margin: 0;
   }
 }
+
 @media screen and (max-width: 500px) {
   .heading {
     margin-top: 20px;
+  }
+  .row-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
   }
 }
 .crypto-image {
@@ -354,10 +363,32 @@
   margin: 0 auto;
   padding: 40px 10px;
 }
+
 .row-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 20px;
+}
+@media screen and (max-width: 800px) {
+  .grid-card {
+    box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(
+      90deg,
+      #fdf4fd 0%,
+      #e6f3ff 35%,
+      #fdf5ff 100%
+    );
+  }
+  .news-card {
+    min-height: 300px !important;
+    width: 100%;
+  }
 }
 .select-news {
   width: 180px;
@@ -445,17 +476,15 @@
   margin-top: 20px !important;
 }
 
+.ant-layout-footer {
+  background: #001529;
+}
 .footer {
   background-color: #001529;
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: -30px;
 }
 @media screen and (max-width: 760px) {
   .routes {
@@ -464,10 +493,12 @@
     align-items: center;
   }
   .grid {
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     gap: 15px;
-    width: 80vw;
+    width: 92vw;
   }
 }
 
