@@ -2,13 +2,13 @@
 
 ## _The Number #1 webisite for crypto related news_
 
-- Powered by
-  ![N|Solid](https://breakline.org/wp-content/uploads/2020/12/RapidAPI-logo-blue-1.png)
-  Discover and cnnect to thousands of API.
-
 ## Live Demo
 
 - [Bitsurf](https://bitsurf.netlify.app/) - Bitsurf website
+
+- Powered by
+  ![N|Solid](https://breakline.org/wp-content/uploads/2020/12/RapidAPI-logo-blue-1.png)
+  Discover and cnnect to thousands of API.
 
 ## Screenshot
 
